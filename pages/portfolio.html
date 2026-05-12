@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Mark Jeferson</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;700;900&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+  <div id="cursorGlow"></div>
+  <div id="cursorDot"></div>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">HOLA<span>!!!</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="devwork.html">Dev Work</a></li>
+        <li><a href="portfolio.html" class="active-page">Portfolio</a></li>
+        <li><a href="motivation.html">Motivation</a></li>
+        <li><a href="contact.html" class="btn-nav">Hire Me ✨</a></li>
+      </ul>
+      <div class="nav-actions"><button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button></div>
+    </div>
+  </nav>
+
+  <section class="portfolio section page-section" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">My Work</p>
+        <h2 class="section-title">Sample Projects 🎨</h2>
+        <p class="section-desc">A glimpse of what I can do for your business</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card card-reveal"><div class="portfolio-img"><div class="portfolio-placeholder"><i class="fas fa-calendar-check"></i></div></div><div class="portfolio-info"><span class="portfolio-tag">Calendar Management</span><h3>Executive Calendar Overhaul</h3><p>Reorganized and optimized a busy executive's calendar, reducing scheduling conflicts by 80%.</p></div></div>
+        <div class="portfolio-card card-reveal"><div class="portfolio-img"><div class="portfolio-placeholder"><i class="fas fa-chart-bar"></i></div></div><div class="portfolio-info"><span class="portfolio-tag">Data Entry</span><h3>Sales Data Spreadsheet</h3><p>Built a comprehensive sales tracking spreadsheet with automated summaries and visual charts.</p></div></div>
+        <div class="portfolio-card card-reveal"><div class="portfolio-img"><div class="portfolio-placeholder"><i class="fas fa-hashtag"></i></div></div><div class="portfolio-info"><span class="portfolio-tag">Social Media</span><h3>30-Day Content Calendar</h3><p>Created a full month of social media content with captions, hashtags, and scheduled posts.</p></div></div>
+        <div class="portfolio-card card-reveal"><div class="portfolio-img"><div class="portfolio-placeholder"><i class="fas fa-file-powerpoint"></i></div></div><div class="portfolio-info"><span class="portfolio-tag">Document Prep</span><h3>Business Presentation</h3><p>Designed a professional 20-slide pitch deck for a startup's investor presentation.</p></div></div>
+        <div class="portfolio-card card-reveal"><div class="portfolio-img"><div class="portfolio-placeholder"><i class="fas fa-search"></i></div></div><div class="portfolio-info"><span class="portfolio-tag">Research</span><h3>Market Research Report</h3><p>Compiled a detailed competitor analysis report with actionable insights for a small business.</p></div></div>
+        <div class="portfolio-card card-reveal"><div class="portfolio-img"><div class="portfolio-placeholder"><i class="fas fa-envelope"></i></div></div><div class="portfolio-info"><span class="portfolio-tag">Email Management</span><h3>Inbox Zero System</h3><p>Implemented a folder and label system that brought a cluttered inbox to zero in one week.</p></div></div>
+      </div>
+      <div class="section-cta reveal-up">
+        <a href="devwork.html" class="btn btn-outline"><i class="fas fa-code"></i> See Dev Projects</a>
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Work With Me</a>
+      </div>
+    </div>
+  </section>
+
+  <canvas id="confettiCanvas"></canvas>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand reveal-up"><a href="../index.html" class="nav-logo">Mark Jeferson <span>VA</span></a><p>Full Stack Developer &amp; Virtual Assistant. 💜</p></div>
+        <div class="footer-links reveal-up" style="--rd:0.1s"><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="devwork.html">Dev Work</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-social reveal-up" style="--rd:0.2s"><h4>Connect</h4><div class="social-icons"><a href="https://www.linkedin.com/in/mark-jeferson-tumolva-b096771b2/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a><a href="https://www.facebook.com/corei9.9000k" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/meliul_2" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a><a href="https://wa.me/+639937501480" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div>
+      </div>
+      <div class="footer-bottom reveal-up" style="--rd:0.3s"><p>Made with 💜 &copy; 2026 MarkJeferson. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="../js/script.js"></script>
+</body>
+</html>

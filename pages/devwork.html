@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Work — Mark Jeferson</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;700;900&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+  <div id="cursorGlow"></div>
+  <div id="cursorDot"></div>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">HOLA<span>!!!</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="devwork.html" class="active-page">Dev Work</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="motivation.html">Motivation</a></li>
+        <li><a href="contact.html" class="btn-nav">Hire Me ✨</a></li>
+      </ul>
+      <div class="nav-actions"><button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button></div>
+    </div>
+  </nav>
+
+  <section class="devwork section page-section" id="dev">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">Full Stack Developer</p>
+        <h2 class="section-title">Dev Work 💻</h2>
+        <p class="section-desc">Building fast, scalable, and beautiful web applications</p>
+      </div>
+      <div class="dev-services reveal-up">
+        <div class="dev-service-card card-reveal"><div class="dev-service-icon"><i class="fas fa-laptop-code"></i></div><h4>Frontend Development</h4><p>Responsive UIs with React, Next.js, HTML/CSS, and modern design systems.</p></div>
+        <div class="dev-service-card card-reveal" style="--rd:100ms"><div class="dev-service-icon"><i class="fas fa-server"></i></div><h4>Backend Development</h4><p>RESTful APIs and server-side logic with Node.js, Express, and PHP.</p></div>
+        <div class="dev-service-card card-reveal" style="--rd:200ms"><div class="dev-service-icon"><i class="fas fa-database"></i></div><h4>Database Design</h4><p>Structured schemas and optimized queries with MySQL and PostgreSQL.</p></div>
+        <div class="dev-service-card card-reveal" style="--rd:300ms"><div class="dev-service-icon"><i class="fas fa-mobile-alt"></i></div><h4>Responsive Design</h4><p>Pixel-perfect, mobile-first layouts that work on every screen size.</p></div>
+      </div>
+      <h3 class="dev-projects-title reveal-up">Featured Projects 🚀</h3>
+      <div class="dev-grid">
+        <div class="dev-card card-reveal"><div class="dev-card-header"><div class="dev-card-icon"><i class="fas fa-globe"></i></div><div class="dev-card-links"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a></div></div><h4>Portfolio Website</h4><p>Personal portfolio with sci-fi animated background, custom cursor, and full responsive design built from scratch.</p><div class="dev-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+        <div class="dev-card card-reveal" style="--rd:90ms"><div class="dev-card-header"><div class="dev-card-icon"><i class="fas fa-shopping-bag"></i></div><div class="dev-card-links"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a></div></div><h4>E-Commerce Platform</h4><p>Full-stack online store with product management, cart system, user auth, and payment integration.</p><div class="dev-tags"><span>React</span><span>Node.js</span><span>MySQL</span></div></div>
+        <div class="dev-card card-reveal" style="--rd:180ms"><div class="dev-card-header"><div class="dev-card-icon"><i class="fas fa-chart-line"></i></div><div class="dev-card-links"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a></div></div><h4>Collections Dashboard</h4><p>Internal tool for tracking accounts receivable, payment statuses, and generating financial reports.</p><div class="dev-tags"><span>React</span><span>Express</span><span>PostgreSQL</span></div></div>
+        <div class="dev-card card-reveal" style="--rd:270ms"><div class="dev-card-header"><div class="dev-card-icon"><i class="fas fa-tasks"></i></div><div class="dev-card-links"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a></div></div><h4>Task Management App</h4><p>Kanban-style project tracker with real-time updates, team collaboration, and deadline notifications.</p><div class="dev-tags"><span>Next.js</span><span>TypeScript</span><span>MongoDB</span></div></div>
+        <div class="dev-card card-reveal" style="--rd:360ms"><div class="dev-card-header"><div class="dev-card-icon"><i class="fas fa-robot"></i></div><div class="dev-card-links"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a></div></div><h4>Automation Scripts</h4><p>Python scripts for data scraping, report generation, and workflow automation used in daily operations.</p><div class="dev-tags"><span>Python</span><span>Selenium</span><span>Pandas</span></div></div>
+        <div class="dev-card card-reveal" style="--rd:450ms"><div class="dev-card-header"><div class="dev-card-icon"><i class="fas fa-comments"></i></div><div class="dev-card-links"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a></div></div><h4>Customer Support Portal</h4><p>Help desk system with ticket management, live chat integration, and FAQ knowledge base.</p><div class="dev-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div></div>
+      </div>
+      <div class="dev-cta reveal-up">
+        <a href="https://meow2000.github.io/MJ/" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-github"></i> View Full Dev Portfolio</a>
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-code"></i> Hire Me as Developer</a>
+      </div>
+    </div>
+  </section>
+
+  <canvas id="confettiCanvas"></canvas>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand reveal-up"><a href="../index.html" class="nav-logo">Mark Jeferson <span>VA</span></a><p>Full Stack Developer &amp; Virtual Assistant. 💜</p></div>
+        <div class="footer-links reveal-up" style="--rd:0.1s"><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="devwork.html">Dev Work</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-social reveal-up" style="--rd:0.2s"><h4>Connect</h4><div class="social-icons"><a href="https://www.linkedin.com/in/mark-jeferson-tumolva-b096771b2/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a><a href="https://www.facebook.com/corei9.9000k" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/meliul_2" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a><a href="https://wa.me/+639937501480" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div>
+      </div>
+      <div class="footer-bottom reveal-up" style="--rd:0.3s"><p>Made with 💜 &copy; 2026 MarkJeferson. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="../js/script.js"></script>
+</body>
+</html>

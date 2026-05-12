@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Mark Jeferson</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;700;900&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+  <div id="cursorGlow"></div>
+  <div id="cursorDot"></div>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">HOLA<span>!!!</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active-page">Services</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="devwork.html">Dev Work</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="motivation.html">Motivation</a></li>
+        <li><a href="contact.html" class="btn-nav">Hire Me ✨</a></li>
+      </ul>
+      <div class="nav-actions"><button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button></div>
+    </div>
+  </nav>
+
+  <section class="services section page-section" id="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">What I Offer</p>
+        <h2 class="section-title">My Services ✨</h2>
+        <p class="section-desc">Flexible support tailored to your business needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-envelope-open-text"></i></div><h3>Email &amp; Calendar Management 📅</h3><p>Inbox organization, email drafting, scheduling meetings, and managing your calendar so nothing falls through the cracks.</p><ul><li>Inbox zero strategy</li><li>Meeting scheduling</li><li>Follow-up reminders</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-share-alt"></i></div><h3>Social Media Management 📱</h3><p>Content scheduling, engagement monitoring, and basic graphic creation to keep your social presence active and consistent.</p><ul><li>Content scheduling</li><li>Community engagement</li><li>Basic graphic design</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-keyboard"></i></div><h3>Data Entry &amp; Research 🔍</h3><p>Accurate data entry, web research, spreadsheet management, and report preparation to keep your records organized.</p><ul><li>Data encoding</li><li>Web research</li><li>Spreadsheet management</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-headset"></i></div><h3>Customer Support 💬</h3><p>Responding to customer inquiries via email or chat, handling basic complaints, and ensuring a positive customer experience.</p><ul><li>Email support</li><li>Live chat assistance</li><li>FAQ management</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-file-alt"></i></div><h3>Document Preparation 📄</h3><p>Creating presentations, formatting documents, preparing reports, and organizing files for easy access.</p><ul><li>Presentation creation</li><li>Document formatting</li><li>File organization</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-shopping-cart"></i></div><h3>E-commerce Support 🛒</h3><p>Product listing, order tracking, inventory updates, and basic store management for your online shop.</p><ul><li>Product listing</li><li>Order management</li><li>Inventory tracking</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-laptop-code"></i></div><h3>Frontend Development 🖥️</h3><p>Responsive, pixel-perfect UIs built with React, Next.js, HTML/CSS, and modern design systems.</p><ul><li>React / Next.js apps</li><li>Responsive layouts</li><li>UI/UX implementation</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-server"></i></div><h3>Backend Development ⚙️</h3><p>RESTful APIs, server-side logic, and database integration with Node.js, Express, and PHP.</p><ul><li>REST API design</li><li>Authentication systems</li><li>Database integration</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-robot"></i></div><h3>Automation &amp; Scripting 🤖</h3><p>Python scripts for data scraping, report generation, and workflow automation to save you hours every week.</p><ul><li>Web scraping</li><li>Report automation</li><li>Workflow scripts</li></ul></div>
+      </div>
+      <div class="section-cta reveal-up">
+        <a href="contact.html" class="btn btn-primary">Get a Free Quote 🚀</a>
+        <a href="devwork.html" class="btn btn-outline">See Dev Work</a>
+      </div>
+    </div>
+  </section>
+
+  <canvas id="confettiCanvas"></canvas>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand reveal-up"><a href="../index.html" class="nav-logo">Mark Jeferson <span>VA</span></a><p>Full Stack Developer &amp; Virtual Assistant. 💜</p></div>
+        <div class="footer-links reveal-up" style="--rd:0.1s"><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="devwork.html">Dev Work</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-social reveal-up" style="--rd:0.2s"><h4>Connect</h4><div class="social-icons"><a href="https://www.linkedin.com/in/mark-jeferson-tumolva-b096771b2/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a><a href="https://www.facebook.com/corei9.9000k" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/meliul_2" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a><a href="https://wa.me/+639937501480" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div>
+      </div>
+      <div class="footer-bottom reveal-up" style="--rd:0.3s"><p>Made with 💜 &copy; 2026 MarkJeferson. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="../js/script.js"></script>
+</body>
+</html>

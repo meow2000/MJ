@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motivation — Mark Jeferson</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;700;900&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+  <div id="cursorGlow"></div>
+  <div id="cursorDot"></div>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">HOLA<span>!!!</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="devwork.html">Dev Work</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="motivation.html" class="active-page">Motivation</a></li>
+        <li><a href="contact.html" class="btn-nav">Hire Me ✨</a></li>
+      </ul>
+      <div class="nav-actions"><button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button></div>
+    </div>
+  </nav>
+
+  <section class="testimonials section page-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">What Drives Me</p>
+        <h2 class="section-title">What Motivates Me 💖</h2>
+      </div>
+      <div class="testimonials-slider reveal-up" id="testimonialsSlider">
+        <div class="testimonial-card active">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The best way to predict your future is to create it."</p>
+          <div class="testimonial-author"><div class="author-avatar"><i class="fas fa-briefcase"></i></div><div><strong>Peter Drucker</strong><span>Austrian-American author, educator, and consultant</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Success is not final, failure is not fatal: it is the courage to continue that counts."</p>
+          <div class="testimonial-author"><div class="author-avatar"><i class="fas fa-balance-scale"></i></div><div><strong>Winston Churchill</strong><span>Former Prime Minister of the United Kingdom</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The secret of getting ahead is getting started."</p>
+          <div class="testimonial-author"><div class="author-avatar"><i class="fas fa-pen"></i></div><div><strong>Mark Twain</strong><span>American author and humorist</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Code is like humor. When you have to explain it, it's bad."</p>
+          <div class="testimonial-author"><div class="author-avatar"><i class="fas fa-code"></i></div><div><strong>Cory House</strong><span>Software architect and developer</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The only way to do great work is to love what you do."</p>
+          <div class="testimonial-author"><div class="author-avatar"><i class="fas fa-apple-alt"></i></div><div><strong>Steve Jobs</strong><span>Co-founder of Apple Inc.</span></div></div>
+        </div>
+      </div>
+      <div class="slider-dots reveal-up" id="sliderDots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+      </div>
+      <div class="section-cta reveal-up">
+        <a href="contact.html" class="btn btn-primary">Let's Work Together 🚀</a>
+        <a href="about.html" class="btn btn-outline">Learn More About Me</a>
+      </div>
+    </div>
+  </section>
+
+  <canvas id="confettiCanvas"></canvas>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand reveal-up"><a href="../index.html" class="nav-logo">Mark Jeferson <span>VA</span></a><p>Full Stack Developer &amp; Virtual Assistant. 💜</p></div>
+        <div class="footer-links reveal-up" style="--rd:0.1s"><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="devwork.html">Dev Work</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-social reveal-up" style="--rd:0.2s"><h4>Connect</h4><div class="social-icons"><a href="https://www.linkedin.com/in/mark-jeferson-tumolva-b096771b2/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a><a href="https://www.facebook.com/corei9.9000k" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/meliul_2" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a><a href="https://wa.me/+639937501480" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div>
+      </div>
+      <div class="footer-bottom reveal-up" style="--rd:0.3s"><p>Made with 💜 &copy; 2026 MarkJeferson. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="../js/script.js"></script>
+</body>
+</html>

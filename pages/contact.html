@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Mark Jeferson</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;700;900&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+  <div id="cursorGlow"></div>
+  <div id="cursorDot"></div>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">HOLA<span>!!!</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="devwork.html">Dev Work</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="motivation.html">Motivation</a></li>
+        <li><a href="contact.html" class="btn-nav active-page">Hire Me ✨</a></li>
+      </ul>
+      <div class="nav-actions"><button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button></div>
+    </div>
+  </nav>
+
+  <section class="contact section page-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">Get In Touch</p>
+        <h2 class="section-title">Let's Work Together 🤗</h2>
+        <p class="section-desc">Ready to free up your time? Send me a message!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Contact Details</h3>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-body"><strong>Email</strong><a href="mailto:mark.14.tumolva@gmail.com">mark.14.tumolva@gmail.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-item-body"><strong>WhatsApp</strong><a href="https://wa.me/+639937501480">+63 (9937) 501-480</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-item-body"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/mark-jeferson-tumolva-b096771b2/" target="_blank" rel="noopener">linkedin.com/in/mark-jeferson-tumolva</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-item-body"><strong>GitHub / Portfolio</strong><a href="https://meow2000.github.io/MJ/" target="_blank" rel="noopener">meow2000.github.io/MJ</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-body"><strong>Location</strong><span>Philippines — Available Worldwide 🌏</span></div>
+          </div>
+          <div class="availability-badge"><span class="pulse"></span> Available for new clients</div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/mark-jeferson-tumolva-b096771b2/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/corei9.9000k" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/meliul_2" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+639937501480" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://meow2000.github.io/MJ/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" placeholder="Juan dela Cruz" required /></div>
+            <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="juan@example.com" required /></div>
+          </div>
+          <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" placeholder="Project inquiry / Collaboration / Hire" /></div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <optgroup label="Virtual Assistant"><option>Email &amp; Calendar Management</option><option>Social Media Management</option><option>Data Entry &amp; Research</option><option>Customer Support</option><option>Document Preparation</option><option>E-commerce Support</option></optgroup>
+              <optgroup label="Full Stack Development"><option>Frontend Development</option><option>Backend Development</option><option>Full Stack Web App</option><option>Database Design</option><option>API Development</option></optgroup>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Budget Range (Optional)</label>
+            <select id="budget" name="budget">
+              <option value="">Select budget range...</option>
+              <option>Under $100</option><option>$100 – $500</option><option>$500 – $1,000</option><option>$1,000 – $5,000</option><option>$5,000+</option><option>Let's discuss</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell me about your project, goals, and timeline..." required></textarea></div>
+          <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Message 🚀</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <canvas id="confettiCanvas"></canvas>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand reveal-up"><a href="../index.html" class="nav-logo">Mark Jeferson <span>VA</span></a><p>Full Stack Developer &amp; Virtual Assistant. 💜</p></div>
+        <div class="footer-links reveal-up" style="--rd:0.1s"><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="devwork.html">Dev Work</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-social reveal-up" style="--rd:0.2s"><h4>Connect</h4><div class="social-icons"><a href="https://www.linkedin.com/in/mark-jeferson-tumolva-b096771b2/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a><a href="https://www.facebook.com/corei9.9000k" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/meliul_2" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a><a href="https://wa.me/+639937501480" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div>
+      </div>
+      <div class="footer-bottom reveal-up" style="--rd:0.3s"><p>Made with 💜 &copy; 2026 MarkJeferson. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="../js/script.js"></script>
+</body>
+</html>
