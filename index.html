@@ -44,16 +44,16 @@
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">HOLA<span>!!!</span></a>
+      <a href="#home" class="nav-logo">HOLA<span>!!!</span></a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" class="active-page">Home</a></li>
-        <li><a href="pages/about.html">About</a></li>
-        <li><a href="pages/services.html">Services</a></li>
-        <li><a href="pages/skills.html">Skills</a></li>
-        <li><a href="pages/devwork.html">Dev Work</a></li>
-        <li><a href="pages/portfolio.html">Portfolio</a></li>
-        <li><a href="pages/motivation.html">Motivation</a></li>
-        <li><a href="pages/contact.html" class="btn-nav">Hire Me ✨</a></li>
+        <li><a href="#home" class="active-page">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#devwork">Dev Work</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Motivation</a></li>
+        <li><a href="#contact" class="btn-nav">Hire Me ✨</a></li>
       </ul>
       <div class="nav-actions">
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -97,10 +97,10 @@
       </p>
 
       <div class="hero-cta animate-in" style="--d:0.75s">
-        <a href="pages/contact.html" class="btn btn-primary btn-glow">
+        <a href="#contact" class="btn btn-primary btn-glow">
           <i class="fas fa-rocket"></i> Let's Work Together
         </a>
-        <a href="pages/services.html" class="btn btn-outline">
+        <a href="#services" class="btn btn-outline">
           <i class="fas fa-satellite-dish"></i> See My Services
         </a>
       </div>
@@ -125,9 +125,9 @@
 
       <!-- Quick nav pills -->
       <div class="hero-pills animate-in" style="--d:1.05s">
-        <a href="pages/devwork.html" class="pill"><i class="fas fa-code"></i> Dev Work</a>
-        <a href="pages/skills.html" class="pill"><i class="fas fa-brain"></i> Skills</a>
-        <a href="pages/portfolio.html" class="pill"><i class="fas fa-folder-open"></i> Portfolio</a>
+        <a href="#devwork" class="pill"><i class="fas fa-code"></i> Dev Work</a>
+        <a href="#skills" class="pill"><i class="fas fa-brain"></i> Skills</a>
+        <a href="#portfolio" class="pill"><i class="fas fa-folder-open"></i> Portfolio</a>
       </div>
     </div>
 
@@ -177,7 +177,7 @@
   <!-- ===== QUICK PREVIEW STRIP ===== -->
   <section class="preview-strip">
     <div class="preview-strip-inner">
-      <a href="pages/services.html" class="preview-card reveal-up">
+      <a href="#services" class="preview-card reveal-up">
         <div class="preview-icon"><i class="fas fa-satellite-dish"></i></div>
         <div class="preview-body">
           <h3>My Services</h3>
@@ -185,7 +185,7 @@
         </div>
         <i class="fas fa-arrow-right preview-arrow"></i>
       </a>
-      <a href="pages/devwork.html" class="preview-card reveal-up" style="--rd:80ms">
+      <a href="#devwork" class="preview-card reveal-up" style="--rd:80ms">
         <div class="preview-icon"><i class="fas fa-laptop-code"></i></div>
         <div class="preview-body">
           <h3>Dev Work</h3>
@@ -193,7 +193,7 @@
         </div>
         <i class="fas fa-arrow-right preview-arrow"></i>
       </a>
-      <a href="pages/contact.html" class="preview-card reveal-up" style="--rd:160ms">
+      <a href="#contact" class="preview-card reveal-up" style="--rd:160ms">
         <div class="preview-icon"><i class="fas fa-paper-plane"></i></div>
         <div class="preview-body">
           <h3>Hire Me</h3>
@@ -203,6 +203,544 @@
       </a>
     </div>
   </section>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section page-section" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">About Me</p>
+        <h2 class="section-title">Who I Am 🌸</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>Versatile tech professional with a Full Stack Developer background and hands-on experience in collections and financial operations.</p>
+          <p>Currently expanding into Virtual Assistance, bringing a unique blend of technical problem-solving, data accuracy, and client-focused communication.</p>
+          <p>Quick to adapt, detail-oriented, and committed to delivering efficient, reliable support across development, finance, and administrative workflows.</p>
+          <div class="about-highlights">
+            <div class="highlight card-reveal" style="--rd:0ms">
+              <i class="fas fa-graduation-cap"></i>
+              <div><strong>VA Newbie 🎓</strong><span>First timer</span></div>
+            </div>
+            <div class="highlight card-reveal" style="--rd:120ms">
+              <i class="fas fa-globe"></i>
+              <div><strong>Remote Ready 🌍</strong><span>Fully equipped home office setup</span></div>
+            </div>
+            <div class="highlight card-reveal" style="--rd:240ms">
+              <i class="fas fa-handshake"></i>
+              <div><strong>Client-Focused 🤝</strong><span>Your success is my priority</span></div>
+            </div>
+            <div class="highlight card-reveal" style="--rd:360ms">
+              <i class="fas fa-code"></i>
+              <div><strong>Full Stack Dev 💻</strong><span>React, Node.js, MySQL &amp; more</span></div>
+            </div>
+            <div class="highlight card-reveal" style="--rd:480ms">
+              <i class="fas fa-briefcase"></i>
+              <div><strong>Collections Specialist 💰</strong><span>Financial ops &amp; accounts receivable</span></div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get In Touch 💌</a>
+        </div>
+        <div class="about-tools reveal-right">
+          <h3>Tools I Use 🛠️</h3>
+          <div class="tools-grid">
+            <div class="tool-badge card-reveal" style="--rd:0ms"><i class="fab fa-google"></i> Google Workspace</div>
+            <div class="tool-badge card-reveal" style="--rd:60ms"><i class="fab fa-microsoft"></i> Microsoft Office</div>
+            <div class="tool-badge card-reveal" style="--rd:120ms"><i class="fab fa-slack"></i> Slack</div>
+            <div class="tool-badge card-reveal" style="--rd:180ms"><i class="fab fa-trello"></i> Trello</div>
+            <div class="tool-badge card-reveal" style="--rd:240ms"><i class="fas fa-video"></i> Zoom</div>
+            <div class="tool-badge card-reveal" style="--rd:300ms"><i class="fas fa-palette"></i> Canva</div>
+            <div class="tool-badge card-reveal" style="--rd:360ms"><i class="fas fa-tasks"></i> Asana</div>
+            <div class="tool-badge card-reveal" style="--rd:420ms"><i class="fas fa-book"></i> Notion</div>
+            <div class="tool-badge card-reveal" style="--rd:480ms"><i class="fas fa-envelope-open"></i> Mailchimp</div>
+            <div class="tool-badge card-reveal" style="--rd:540ms"><i class="fab fa-wordpress"></i> WordPress</div>
+            <div class="tool-badge card-reveal" style="--rd:600ms"><i class="fab fa-react"></i> React</div>
+            <div class="tool-badge card-reveal" style="--rd:660ms"><i class="fab fa-node-js"></i> Node.js</div>
+            <div class="tool-badge card-reveal" style="--rd:720ms"><i class="fab fa-python"></i> Python</div>
+            <div class="tool-badge card-reveal" style="--rd:780ms"><i class="fas fa-database"></i> MySQL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services section page-section" id="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">What I Offer</p>
+        <h2 class="section-title">My Services ✨</h2>
+        <p class="section-desc">Flexible support tailored to your business needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-envelope-open-text"></i></div><h3>Email &amp; Calendar Management 📅</h3><p>Inbox organization, email drafting, scheduling meetings, and managing your calendar so nothing falls through the cracks.</p><ul><li>Inbox zero strategy</li><li>Meeting scheduling</li><li>Follow-up reminders</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-share-alt"></i></div><h3>Social Media Management 📱</h3><p>Content scheduling, engagement monitoring, and basic graphic creation to keep your social presence active and consistent.</p><ul><li>Content scheduling</li><li>Community engagement</li><li>Basic graphic design</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-keyboard"></i></div><h3>Data Entry &amp; Research 🔍</h3><p>Accurate data entry, web research, spreadsheet management, and report preparation to keep your records organized.</p><ul><li>Data encoding</li><li>Web research</li><li>Spreadsheet management</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-headset"></i></div><h3>Customer Support 💬</h3><p>Responding to customer inquiries via email or chat, handling basic complaints, and ensuring a positive customer experience.</p><ul><li>Email support</li><li>Live chat assistance</li><li>FAQ management</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-file-alt"></i></div><h3>Document Preparation 📄</h3><p>Creating presentations, formatting documents, preparing reports, and organizing files for easy access.</p><ul><li>Presentation creation</li><li>Document formatting</li><li>File organization</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-shopping-cart"></i></div><h3>E-commerce Support 🛒</h3><p>Product listing, order tracking, inventory updates, and basic store management for your online shop.</p><ul><li>Product listing</li><li>Order management</li><li>Inventory tracking</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-laptop-code"></i></div><h3>Frontend Development 🖥️</h3><p>Responsive, pixel-perfect UIs built with React, Next.js, HTML/CSS, and modern design systems.</p><ul><li>React / Next.js apps</li><li>Responsive layouts</li><li>UI/UX implementation</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-server"></i></div><h3>Backend Development ⚙️</h3><p>RESTful APIs, server-side logic, and database integration with Node.js, Express, and PHP.</p><ul><li>REST API design</li><li>Authentication systems</li><li>Database integration</li></ul></div>
+        <div class="service-card card-reveal"><div class="service-icon"><i class="fas fa-robot"></i></div><h3>Automation &amp; Scripting 🤖</h3><p>Python scripts for data scraping, report generation, and workflow automation to save you hours every week.</p><ul><li>Web scraping</li><li>Report automation</li><li>Workflow scripts</li></ul></div>
+      </div>
+      <div class="section-cta reveal-up">
+        <a href="#contact" class="btn btn-primary">Get a Free Quote 🚀</a>
+        <a href="#devwork" class="btn btn-outline">See Dev Work</a>
+      </div>
+    </div>
+  </section>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills section page-section" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">My Expertise</p>
+        <h2 class="section-title">Skills &amp; Proficiency 💪</h2>
+      </div>
+      <div class="skills-tabs reveal-up">
+        <button class="skills-tab active" data-tab="va">🗂️ Virtual Assistant</button>
+        <button class="skills-tab" data-tab="dev">💻 Full Stack Dev</button>
+      </div>
+      <div class="skills-panel active" id="tab-va">
+        <div class="va-level-badge reveal-up">
+          <i class="fas fa-seedling"></i>
+          <div>
+            <strong>Entry Level — Aspiring VA</strong>
+            <span>Honest self-assessment as a first-timer. Eager to learn and grow with every client.</span>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <div class="skills-bars reveal-left">
+            <div class="skill-item">
+              <div class="skill-info"><span>Email Management</span><span>45%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Data Entry &amp; Research</span><span>60%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Social Media Management</span><span>50%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Google Workspace</span><span>65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Customer Support</span><span>40%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Canva / Design</span><span>55%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Calendar Management</span><span>45%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Document Preparation</span><span>58%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="58"></div></div>
+            </div>
+          </div>
+          <div class="soft-skills reveal-right">
+            <h3>Soft Skills 🌟</h3>
+            <div class="soft-skills-grid">
+              <div class="soft-skill card-reveal"><i class="fas fa-clock"></i> Time Management</div>
+              <div class="soft-skill card-reveal"><i class="fas fa-comments"></i> Communication</div>
+              <div class="soft-skill card-reveal"><i class="fas fa-puzzle-piece"></i> Problem Solving</div>
+              <div class="soft-skill card-reveal"><i class="fas fa-eye"></i> Attention to Detail</div>
+              <div class="soft-skill card-reveal"><i class="fas fa-sync-alt"></i> Adaptability</div>
+              <div class="soft-skill card-reveal"><i class="fas fa-users"></i> Teamwork</div>
+              <div class="soft-skill card-reveal"><i class="fas fa-lightbulb"></i> Initiative</div>
+              <div class="soft-skill card-reveal"><i class="fas fa-lock"></i> Confidentiality</div>
+            </div>
+            <div class="skill-legend reveal-up">
+              <h4>Proficiency Scale</h4>
+              <div class="legend-item">
+                <span class="legend-bar-wrap"><span class="legend-bar" style="width:25%"></span></span>
+                <span>0–30% Beginner</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-bar-wrap"><span class="legend-bar" style="width:50%"></span></span>
+                <span>31–55% Learning</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-bar-wrap"><span class="legend-bar" style="width:75%"></span></span>
+                <span>56–75% Developing</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-bar-wrap"><span class="legend-bar" style="width:100%"></span></span>
+                <span>76–100% Proficient</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-panel" id="tab-dev">
+        <div class="dev-intro reveal-up">
+          <div class="dev-intro-icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="dev-intro-text">
+            <h3>Full Stack Developer</h3>
+            <p>Building end-to-end web applications — from pixel-perfect frontends to scalable backends and optimized databases.</p>
+          </div>
+          <a href="#devwork" class="btn btn-outline dev-intro-btn">
+            <i class="fas fa-external-link-alt"></i> View Dev Projects
+          </a>
+        </div>
+        <div class="skills-grid">
+          <div class="skills-bars reveal-left">
+            <p class="skill-category-label">⚡ Frontend</p>
+            <div class="skill-item">
+              <div class="skill-info"><span><i class="fab fa-html5"></i> HTML5 / CSS3</span><span>95%</span></div>
+              <div class="skill-bar"><div class="skill-fill dev-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span><i class="fab fa-js-square"></i> JavaScript / TypeScript</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-fill dev-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span><i class="fab fa-react"></i> React / Next.js</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill dev-fill" data-width="85"></div></div>
+            </div>
+            <p class="skill-category-label">🔧 Backend</p>
+            <div class="skill-item">
+              <div class="skill-info"><span><i class="fab fa-node-js"></i> Node.js / Express</span><span>82%</span></div>
+              <div class="skill-bar"><div class="skill-fill dev-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span><i class="fab fa-python"></i> Python / Flask</span><span>78%</span></div>
+              <div class="skill-bar"><div class="skill-fill dev-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span><i class="fab fa-php"></i> PHP / Laravel</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill dev-fill" data-width="75"></div></div>
+            </div>
+            <p class="skill-category-label">🗄️ Database &amp; DevOps</p>
+            <div class="skill-item">
+              <div class="skill-info"><span><i class="fas fa-database"></i> MySQL / PostgreSQL</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill dev-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span><i class="fab fa-git-alt"></i> Git / GitHub</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill dev-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span><i class="fab fa-docker"></i> Docker / CI-CD</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill dev-fill" data-width="70"></div></div>
+            </div>
+          </div>
+          <div class="dev-stack-col reveal-right">
+            <h3>Tech Stack 🔧</h3>
+            <div class="stack-group card-reveal">
+              <div class="stack-group-label"><i class="fas fa-desktop"></i> Frontend</div>
+              <div class="stack-badges">
+                <div class="stack-badge"><i class="fab fa-html5" style="color:#e34f26"></i><span>HTML5</span></div>
+                <div class="stack-badge"><i class="fab fa-css3-alt" style="color:#1572b6"></i><span>CSS3</span></div>
+                <div class="stack-badge"><i class="fab fa-js-square" style="color:#f7df1e"></i><span>JavaScript</span></div>
+                <div class="stack-badge"><i class="fab fa-react" style="color:#61dafb"></i><span>React</span></div>
+                <div class="stack-badge"><i class="fas fa-layer-group" style="color:#00d4ff"></i><span>Next.js</span></div>
+                <div class="stack-badge"><i class="fab fa-sass" style="color:#cc6699"></i><span>Sass</span></div>
+              </div>
+            </div>
+            <div class="stack-group card-reveal" style="--rd:100ms">
+              <div class="stack-group-label"><i class="fas fa-server"></i> Backend</div>
+              <div class="stack-badges">
+                <div class="stack-badge"><i class="fab fa-node-js" style="color:#68a063"></i><span>Node.js</span></div>
+                <div class="stack-badge"><i class="fas fa-bolt" style="color:#00d4ff"></i><span>Express</span></div>
+                <div class="stack-badge"><i class="fab fa-python" style="color:#3776ab"></i><span>Python</span></div>
+                <div class="stack-badge"><i class="fab fa-php" style="color:#777bb4"></i><span>PHP</span></div>
+                <div class="stack-badge"><i class="fas fa-leaf" style="color:#68a063"></i><span>REST API</span></div>
+              </div>
+            </div>
+            <div class="stack-group card-reveal" style="--rd:200ms">
+              <div class="stack-group-label"><i class="fas fa-database"></i> Database &amp; Cloud</div>
+              <div class="stack-badges">
+                <div class="stack-badge"><i class="fas fa-database" style="color:#00758f"></i><span>MySQL</span></div>
+                <div class="stack-badge"><i class="fas fa-elephant" style="color:#336791"></i><span>PostgreSQL</span></div>
+                <div class="stack-badge"><i class="fas fa-leaf" style="color:#4db33d"></i><span>MongoDB</span></div>
+                <div class="stack-badge"><i class="fab fa-docker" style="color:#2496ed"></i><span>Docker</span></div>
+                <div class="stack-badge"><i class="fab fa-aws" style="color:#ff9900"></i><span>AWS</span></div>
+              </div>
+            </div>
+            <div class="stack-group card-reveal" style="--rd:300ms">
+              <div class="stack-group-label"><i class="fas fa-tools"></i> Tools &amp; Workflow</div>
+              <div class="stack-badges">
+                <div class="stack-badge"><i class="fab fa-git-alt" style="color:#f05032"></i><span>Git</span></div>
+                <div class="stack-badge"><i class="fab fa-github" style="color:#e8f4ff"></i><span>GitHub</span></div>
+                <div class="stack-badge"><i class="fas fa-terminal" style="color:#00d4ff"></i><span>VS Code</span></div>
+                <div class="stack-badge"><i class="fas fa-vial" style="color:#ff6bef"></i><span>Postman</span></div>
+                <div class="stack-badge"><i class="fab fa-figma" style="color:#f24e1e"></i><span>Figma</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dev-learning reveal-up">
+          <h3 class="dev-learning-title"><i class="fas fa-graduation-cap"></i> Currently Learning &amp; Exploring</h3>
+          <div class="learning-grid">
+            <div class="learning-card card-reveal">
+              <div class="learning-icon"><i class="fab fa-react"></i></div>
+              <div class="learning-body">
+                <strong>React Native</strong>
+                <span>Mobile app development for iOS &amp; Android</span>
+                <div class="learning-bar"><div class="learning-fill" style="width:45%"></div></div>
+              </div>
+            </div>
+            <div class="learning-card card-reveal" style="--rd:80ms">
+              <div class="learning-icon"><i class="fas fa-brain"></i></div>
+              <div class="learning-body">
+                <strong>AI / Machine Learning</strong>
+                <span>Python, TensorFlow basics &amp; LLM integration</span>
+                <div class="learning-bar"><div class="learning-fill" style="width:30%"></div></div>
+              </div>
+            </div>
+            <div class="learning-card card-reveal" style="--rd:160ms">
+              <div class="learning-icon"><i class="fas fa-cloud"></i></div>
+              <div class="learning-body">
+                <strong>Cloud Architecture</strong>
+                <span>AWS services, serverless &amp; microservices</span>
+                <div class="learning-bar"><div class="learning-fill" style="width:40%"></div></div>
+              </div>
+            </div>
+            <div class="learning-card card-reveal" style="--rd:240ms">
+              <div class="learning-icon"><i class="fas fa-shield-alt"></i></div>
+              <div class="learning-body">
+                <strong>Web Security</strong>
+                <span>OWASP, auth patterns &amp; secure coding</span>
+                <div class="learning-bar"><div class="learning-fill" style="width:55%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dev-skills-cta reveal-up">
+          <a href="#devwork" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> See My Dev Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-code"></i> Hire Me as Developer
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- ===== DEV WORK SECTION ===== -->
+  <section class="devwork section page-section" id="devwork">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">Full Stack Developer</p>
+        <h2 class="section-title">Dev Work 💻</h2>
+        <p class="section-desc">Building fast, scalable, and beautiful web applications</p>
+      </div>
+      <div class="dev-services reveal-up">
+        <div class="dev-service-card card-reveal"><div class="dev-service-icon"><i class="fas fa-laptop-code"></i></div><h4>Frontend Development</h4><p>Responsive UIs with React, Next.js, HTML/CSS, and modern design systems.</p></div>
+        <div class="dev-service-card card-reveal" style="--rd:100ms"><div class="dev-service-icon"><i class="fas fa-server"></i></div><h4>Backend Development</h4><p>RESTful APIs and server-side logic with Node.js, Express, and PHP.</p></div>
+        <div class="dev-service-card card-reveal" style="--rd:200ms"><div class="dev-service-icon"><i class="fas fa-database"></i></div><h4>Database Design</h4><p>Structured schemas and optimized queries with MySQL and PostgreSQL.</p></div>
+        <div class="dev-service-card card-reveal" style="--rd:300ms"><div class="dev-service-icon"><i class="fas fa-mobile-alt"></i></div><h4>Responsive Design</h4><p>Pixel-perfect, mobile-first layouts that work on every screen size.</p></div>
+      </div>
+      <h3 class="dev-projects-title reveal-up">Featured Projects 🚀</h3>
+      <div class="dev-grid">
+        <div class="dev-card card-reveal"><div class="dev-card-header"><div class="dev-card-icon"><i class="fas fa-globe"></i></div><div class="dev-card-links"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a></div></div><h4>Portfolio Website</h4><p>Personal portfolio with sci-fi animated background, custom cursor, and full responsive design built from scratch.</p><div class="dev-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+        <div class="dev-card card-reveal" style="--rd:90ms"><div class="dev-card-header"><div class="dev-card-icon"><i class="fas fa-shopping-bag"></i></div><div class="dev-card-links"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a></div></div><h4>E-Commerce Platform</h4><p>Full-stack online store with product management, cart system, user auth, and payment integration.</p><div class="dev-tags"><span>React</span><span>Node.js</span><span>MySQL</span></div></div>
+        <div class="dev-card card-reveal" style="--rd:180ms"><div class="dev-card-header"><div class="dev-card-icon"><i class="fas fa-chart-line"></i></div><div class="dev-card-links"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a></div></div><h4>Collections Dashboard</h4><p>Internal tool for tracking accounts receivable, payment statuses, and generating financial reports.</p><div class="dev-tags"><span>React</span><span>Express</span><span>PostgreSQL</span></div></div>
+        <div class="dev-card card-reveal" style="--rd:270ms"><div class="dev-card-header"><div class="dev-card-icon"><i class="fas fa-tasks"></i></div><div class="dev-card-links"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a></div></div><h4>Task Management App</h4><p>Kanban-style project tracker with real-time updates, team collaboration, and deadline notifications.</p><div class="dev-tags"><span>Next.js</span><span>TypeScript</span><span>MongoDB</span></div></div>
+        <div class="dev-card card-reveal" style="--rd:360ms"><div class="dev-card-header"><div class="dev-card-icon"><i class="fas fa-robot"></i></div><div class="dev-card-links"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a></div></div><h4>Automation Scripts</h4><p>Python scripts for data scraping, report generation, and workflow automation used in daily operations.</p><div class="dev-tags"><span>Python</span><span>Selenium</span><span>Pandas</span></div></div>
+        <div class="dev-card card-reveal" style="--rd:450ms"><div class="dev-card-header"><div class="dev-card-icon"><i class="fas fa-comments"></i></div><div class="dev-card-links"><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a></div></div><h4>Customer Support Portal</h4><p>Help desk system with ticket management, live chat integration, and FAQ knowledge base.</p><div class="dev-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div></div>
+      </div>
+      <div class="dev-cta reveal-up">
+        <a href="https://meow2000.github.io/MJ/" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-github"></i> View Full Dev Portfolio</a>
+        <a href="#contact" class="btn btn-primary"><i class="fas fa-code"></i> Hire Me as Developer</a>
+      </div>
+    </div>
+  </section>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- ===== PORTFOLIO SECTION ===== -->
+  <section class="portfolio section page-section" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">My Work</p>
+        <h2 class="section-title">Sample Projects 🎨</h2>
+        <p class="section-desc">A glimpse of what I can do for your business</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card card-reveal"><div class="portfolio-img"><div class="portfolio-placeholder"><i class="fas fa-calendar-check"></i></div></div><div class="portfolio-info"><span class="portfolio-tag">Calendar Management</span><h3>Executive Calendar Overhaul</h3><p>Reorganized and optimized a busy executive's calendar, reducing scheduling conflicts by 80%.</p></div></div>
+        <div class="portfolio-card card-reveal"><div class="portfolio-img"><div class="portfolio-placeholder"><i class="fas fa-chart-bar"></i></div></div><div class="portfolio-info"><span class="portfolio-tag">Data Entry</span><h3>Sales Data Spreadsheet</h3><p>Built a comprehensive sales tracking spreadsheet with automated summaries and visual charts.</p></div></div>
+        <div class="portfolio-card card-reveal"><div class="portfolio-img"><div class="portfolio-placeholder"><i class="fas fa-hashtag"></i></div></div><div class="portfolio-info"><span class="portfolio-tag">Social Media</span><h3>30-Day Content Calendar</h3><p>Created a full month of social media content with captions, hashtags, and scheduled posts.</p></div></div>
+        <div class="portfolio-card card-reveal"><div class="portfolio-img"><div class="portfolio-placeholder"><i class="fas fa-file-powerpoint"></i></div></div><div class="portfolio-info"><span class="portfolio-tag">Document Prep</span><h3>Business Presentation</h3><p>Designed a professional 20-slide pitch deck for a startup's investor presentation.</p></div></div>
+        <div class="portfolio-card card-reveal"><div class="portfolio-img"><div class="portfolio-placeholder"><i class="fas fa-search"></i></div></div><div class="portfolio-info"><span class="portfolio-tag">Research</span><h3>Market Research Report</h3><p>Compiled a detailed competitor analysis report with actionable insights for a small business.</p></div></div>
+        <div class="portfolio-card card-reveal"><div class="portfolio-img"><div class="portfolio-placeholder"><i class="fas fa-envelope"></i></div></div><div class="portfolio-info"><span class="portfolio-tag">Email Management</span><h3>Inbox Zero System</h3><p>Implemented a folder and label system that brought a cluttered inbox to zero in one week.</p></div></div>
+      </div>
+      <div class="section-cta reveal-up">
+        <a href="#devwork" class="btn btn-outline"><i class="fas fa-code"></i> See Dev Projects</a>
+        <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Work With Me</a>
+      </div>
+    </div>
+  </section>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- ===== TESTIMONIALS/MOTIVATION SECTION ===== -->
+  <section class="testimonials section page-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">What Drives Me</p>
+        <h2 class="section-title">What Motivates Me 💖</h2>
+      </div>
+      <div class="testimonials-slider reveal-up" id="testimonialsSlider">
+        <div class="testimonial-card active">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The best way to predict your future is to create it."</p>
+          <div class="testimonial-author"><div class="author-avatar"><i class="fas fa-briefcase"></i></div><div><strong>Peter Drucker</strong><span>Austrian-American author, educator, and consultant</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Success is not final, failure is not fatal: it is the courage to continue that counts."</p>
+          <div class="testimonial-author"><div class="author-avatar"><i class="fas fa-balance-scale"></i></div><div><strong>Winston Churchill</strong><span>Former Prime Minister of the United Kingdom</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The secret of getting ahead is getting started."</p>
+          <div class="testimonial-author"><div class="author-avatar"><i class="fas fa-pen"></i></div><div><strong>Mark Twain</strong><span>American author and humorist</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Code is like humor. When you have to explain it, it's bad."</p>
+          <div class="testimonial-author"><div class="author-avatar"><i class="fas fa-code"></i></div><div><strong>Cory House</strong><span>Software architect and developer</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The only way to do great work is to love what you do."</p>
+          <div class="testimonial-author"><div class="author-avatar"><i class="fas fa-apple-alt"></i></div><div><strong>Steve Jobs</strong><span>Co-founder of Apple Inc.</span></div></div>
+        </div>
+      </div>
+      <div class="slider-dots reveal-up" id="sliderDots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+      </div>
+      <div class="section-cta reveal-up">
+        <a href="#contact" class="btn btn-primary">Let's Work Together 🚀</a>
+        <a href="#about" class="btn btn-outline">Learn More About Me</a>
+      </div>
+    </div>
+  </section>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact section page-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">Get In Touch</p>
+        <h2 class="section-title">Let's Work Together 🤗</h2>
+        <p class="section-desc">Ready to free up your time? Send me a message!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Contact Details</h3>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-body"><strong>Email</strong><a href="mailto:mark.14.tumolva@gmail.com">mark.14.tumolva@gmail.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-item-body"><strong>WhatsApp</strong><a href="https://wa.me/+639937501480">+63 (9937) 501-480</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-item-body"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/mark-jeferson-tumolva-b096771b2/" target="_blank" rel="noopener">linkedin.com/in/mark-jeferson-tumolva</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-item-body"><strong>GitHub / Portfolio</strong><a href="https://meow2000.github.io/MJ/" target="_blank" rel="noopener">meow2000.github.io/MJ</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-body"><strong>Location</strong><span>Philippines — Available Worldwide 🌏</span></div>
+          </div>
+          <div class="availability-badge"><span class="pulse"></span> Available for new clients</div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/mark-jeferson-tumolva-b096771b2/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/corei9.9000k" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/meliul_2" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+639937501480" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://meow2000.github.io/MJ/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" placeholder="Juan dela Cruz" required /></div>
+            <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="juan@example.com" required /></div>
+          </div>
+          <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" placeholder="Project inquiry / Collaboration / Hire" /></div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <optgroup label="Virtual Assistant"><option>Email &amp; Calendar Management</option><option>Social Media Management</option><option>Data Entry &amp; Research</option><option>Customer Support</option><option>Document Preparation</option><option>E-commerce Support</option></optgroup>
+              <optgroup label="Full Stack Development"><option>Frontend Development</option><option>Backend Development</option><option>Full Stack Web App</option><option>Database Design</option><option>API Development</option></optgroup>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Budget Range (Optional)</label>
+            <select id="budget" name="budget">
+              <option value="">Select budget range...</option>
+              <option>Under $100</option><option>$100 – $500</option><option>$500 – $1,000</option><option>$1,000 – $5,000</option><option>$5,000+</option><option>Let's discuss</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell me about your project, goals, and timeline..." required></textarea></div>
+          <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Message 🚀</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand reveal-up">
+          <a href="#home" class="nav-logo">Mark Jeferson <span>VA</span></a>
+          <p>Full Stack Developer &amp; Virtual Assistant. Let's build something great together. 💜</p>
+        </div>
+        <div class="footer-links reveal-up" style="--rd:0.1s">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#devwork">Dev Work</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social reveal-up" style="--rd:0.2s">
+          <h4>Connect With Me</h4>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mark-jeferson-tumolva-b096771b2/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/corei9.9000k" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/meliul_2" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+639937501480" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom reveal-up" style="--rd:0.3s">
+        <p>Made with 💜 &copy; 2026 MarkJeferson. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
   <canvas id="confettiCanvas"></canvas>
 
